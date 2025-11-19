@@ -12,6 +12,7 @@ namespace MohawkGame2D
     {
         // Place your variables here:
         public static int question = 0;
+        public static int point = 0;
         cursorDetect Cursor = new cursorDetect(new Vector2(-1, -1), new Vector2(1, 1));
         button[] questionOne = {
         new button(new Vector2(100, 200), new Vector2(100, 100), true, Color.Black, "Correct"), // Correct Answer
@@ -60,12 +61,77 @@ namespace MohawkGame2D
         public void Update()
         {
             Window.ClearBackground(Color.White);
-            if (question == 0)
+            if (question == 1)
             {
                 for (int i = 0; i < questionOne.Length; i++)
                 {
                     questionOne[i].Update();
                 }
+                Cursor.Update(questionOne);
+            }
+            if (question == 2)
+            {
+                for (int i = 0; i < questionTwo.Length; i++)
+                {
+                    questionTwo[i].Update();
+                }
+                Cursor.Update(questionTwo);
+            }
+            if (question == 3)
+            {
+                for (int i = 0; i < questionThree.Length; i++)
+                {
+                    questionThree[i].Update();
+                }
+                Cursor.Update(questionThree);
+            }
+            if (question == 4)
+            {
+                for (int i = 0; i < questionFour.Length; i++)
+                {
+                    questionFour[i].Update();
+                }
+                Cursor.Update(questionFour);
+            }
+            if (question == 5)
+            {
+                for (int i = 0; i < questionFive.Length; i++)
+                {
+                    questionFive[i].Update();
+                }
+                Cursor.Update(questionFive);
+            }
+            if (question == 6)
+            {
+                if (point == 0)
+                {
+                    // User sucks at programming and needs to rethink his career path
+                }
+                if (point == 1)
+                {
+                    // User should attend classes more
+                }
+                if (point == 2)
+                {
+                    // User should study more
+                }
+                if (point == 3)
+                {
+                    // User is mid
+                }
+                if (point == 4)
+                {
+                    // User is very knowledgable in programming
+                }
+                if (point == 5)
+                {
+                    // User should work at NASA or sum
+                }
+                for (int i = 0; i < questionFive.Length; i++)
+                {
+                    questionFive[i].Update();
+                }
+                Cursor.Update(questionFive);
             }
         }
     }

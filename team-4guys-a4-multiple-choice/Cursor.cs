@@ -60,6 +60,7 @@ namespace MohawkGame2D
                     if (select.answer)
                     {
                         Game.question++;
+                        Game.point++;
                     }
                     // If player touches the goal
                     if (select.answer == false)
