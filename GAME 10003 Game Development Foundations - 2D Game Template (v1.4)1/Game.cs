@@ -1,5 +1,4 @@
 ﻿// Include the namespaces (code libraries) you need below.
-using GAME_10003_Game_Development_Foundations___2D_Game_Template__v1._4_1;
 using System;
 using System.Numerics;
 
